@@ -1,0 +1,182 @@
+:root {
+  --clr-primary: #2680c0;
+  --clr-primary-dark: hsl(205, 100%, 21%);
+  --clr-primary-light: hsl(205, 84%, 74%);
+  --clr-grey-1: #102a42;
+  --clr-grey-5: #617d98;
+  --clr-grey-10: #f1f5f8;
+  --clr-white: #fff;
+  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-light: hsl(360, 71%, 66%);
+  --ff-primary: "Catamaran", sans-serif;
+  --transition: all 0.3s linear;
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
+  --large-screen-width: 1170px;
+  --small-screen-width: 90vw;
+  --fixed-width: 50rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: cursive;
+  background: var(--clr-grey-10);
+  line-height: 1.5;
+  font-size: 0.875rem;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+/* NAV */
+#nav {
+  background: #000;
+  height: 10vh;
+  width: 100vw;
+  position: sticky;
+  color: #fff;
+  font-family: cursive;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  cursor: pointer;
+}
+
+/*  */
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+.title strong {
+  color: orange;
+}
+
+.productContainer {
+  margin: 2rem;
+  padding: 2rem;
+  width: 95vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.homeImg {
+  height: 14rem;
+  max-width: 14rem;
+  width: 100vw;
+  display: block;
+  margin: auto;
+}
+.items {
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.card {
+  background: grey;
+  border: none;
+  border-radius: .5rem;
+  margin: 1rem;
+  width: 20rem;
+  padding: 1.5rem;
+  padding: auto;
+}
+
+.detContainer {
+  background: grey;
+  margin: 2rem auto;
+  width: 40rem;
+  border: none;
+  border-radius: .5rem;
+  display: flex;
+  justify-content: space-between;
+  grid-column-gap: 2rem;
+  padding: 2rem;
+}
+.btns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  grid-column-gap: .25rem;
+}
+button {
+  padding: .25rem 1rem;
+  border-radius: .5rem;
+  border: 1px solid black;
+  margin: .5rem 0;
+  transition: all .5s linear;
+  font-size: .75rem;
+}
+
+button:hover {
+  background: orange;
+  color: white;
+  border: none;
+}
+
+.itemB {
+  align-self: center;
+}
+
+.detImg {
+  height: 18rem;
+  width: 20rem;
+}
+
+.count {
+  margin: .15rem;
+  background: black;
+  padding: .25rem;
+  border-radius: 100%;
+  border: 1px solid orange;
+  color: orange;
+}
+.cartContainer {
+ width: 90vw;
+ margin: 2rem;
+ padding: 2rem;
+}
+.cartItems {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1.25rem;
+  align-items: center;
+  background: gray;
+  padding:  1.5rem;
+  border-radius: .75rem;
+}
+
+.cartImg {
+  height: 8rem;
+  width: 10rem;
+  border-radius: .5rem;
+}
+
+.orange {
+  color: rgb(241, 190, 95);
+  font-weight: 600;
+}
+
+.paymentSec {
+  width: 12rem;
+  height: 10rem;
+  background: rgb(241, 190, 95);
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: .5rem;
+}
